@@ -1,0 +1,211 @@
+Software Testing Process (W3 Campus)
+Test Design
+Test design: The activity of deriving and specifying test cases from test conditions.
+
+Test case: A set of preconditions, inputs, actions (where applicable), expected results and postconditions, developed based on test conditions.
+
+Test data: Data created or selected to satisfy the execution preconditions and inputs to execute one or more test cases.
+
+Test analysis addresses "what to test" and test design addresses the question "how to test", what specific inputs and data are needed to exercise the software for a particular test condition. In test design, test conditions are elaborated (at a high level) in test cases, sets of test cases and other test ware.
+
+Test design includes the following major activities:
+
+Design and prioritize test cases and sets of test cases.
+
+Identify the necessary test data to support the test conditions and test cases as they are identified and designed.
+
+Design the test environment, including set-up, and identify any required infra-structure and tools.
+
+Capture bi-directional traceability between the test basis, test conditions, test cases and test procedures.
+
+Test Implementation
+Test implementation: The activity that prepares the test ware needed for test execution based on test analysis and design. Test procedures are specified in test implementation.
+
+Test implementation also involves setting up the test environment and anything else that needs to be done to prepare for test execution, such as creating test ware.
+
+Test implementation includes the following major activities:
+
+Develop and prioritize the test procedures and, potentially, create automated test scripts.
+
+Create test suites from the test procedures and automated test scripts (if any).
+
+Arrange the test suites within a test execution schedule in a way that results in efficient test execution.
+
+Build the test environment (possibly including test harnesses, service virtualization, simulators and other infrastructure items) and verify that everything needed has been set up correctly.
+
+Prepare test data and ensure that it is properly loaded in the test environment.
+
+Verify and update the bi-directional traceability between the test basis, test conditions, test cases, test procedures and test suites.
+
+Test Execution
+Test execution: The process of running a test on the component or system under test, producing actual result(s). In test execution, the test suites that have been assembled in test implementation are run, according to the test execution schedule.  
+
+Test ware: Work products produced during the test process for use in planning, designing, executing, evaluating and reporting on testing.  
+
+Test execution includes the following major activities:
+
+Record the identities and versions of all of the test items (parts of the test object to be tested), test objects (system or component to be tested), test tools and other testware.
+
+Execute the tests either manually or by using an automated test execution tool, according to the planned sequence.
+
+Compare actual results with expected results, observing where the actual and expected results differ.
+
+Analyze the anomalies to establish their likely causes. Failures may occur due to defects in the code, or they may be false positives.
+
+Report defects based on the failures observed.
+
+Log the outcome of test execution (e.g. pass, fail or blocked). This includes not only the anomalies observed and the pass/fail status of the test cases, but also the identities and versions of the software under test, test tools and test ware.  
+
+As necessary, repeat the test activities when actions are taken to resolve the discrepancies.  
+
+Verify and update the bi-directional traceability between the test basis, test conditions, test cases, test procedures and test results.
+
+Test Completion
+Test completion: The activity that makes test assets available for later use, leaves test environments in a satisfactory condition and communicates the results of testing to relevant stakeholders.  
+
+Test completion activities collect data from completed test activities to consolidate experience, test ware and any other relevant information. Example:  
+
+When a software system is released.
+
+When a test project is completed (or cancelled).
+
+When an Agile project iteration is finished.
+
+When a test level has been completed.
+
+When a maintenance release has been completed.
+
+Test completion includes the following major activities:
+
+Check whether all defect reports are closed, entering change requests or product backlog items for any defects that remain unresolved.
+
+Create a test summary report to be communicated to stakeholders.
+
+Finalize and archive the test environment, the test data, the test infrastructure and other test ware for later reuse.
+
+Hand over the test ware to the maintenance teams, other project teams, and/or other stakeholders.
+
+Analyze lessons learned from completed test activities to determine changes needed for future iterations, releases and projects (i.e. perform a retrospective).
+
+Use the information gathered to improve test process maturity.
+
+Test Work Products
+Work products: is the generic name given to any form of documentation, informal communication or artifact that is used in testing.
+
+Types of work products:
+
+Test planning work products: Test plans.
+
+Test monitoring and control work products: Test reports.
+
+Test analysis work products: Test Conditions.
+
+Test design work products: Test cases and sets of test cases.
+
+Test implementation work products: * Test procedures and the sequencing of those procedures.
+
+Test suites.
+
+A test execution schedule.
+
+Test execution work products:
+
+Documentation of the status of individual test cases or test procedures.
+
+Defect reports.
+
+Documentation about which item(s), test object(s), test tools and testware were involved in the testing.
+
+Test completion work products:
+
+Test summary reports.
+
+Action items for improvement of subsequent projects or iterations.
+
+Change requests or product backlog items.
+
+Finalized test ware.
+
+Traceability
+Traceability: The degree to which a relationship can be established between two or more work products.
+
+Bi-directional traceability: a given requirement through test conditions and test cases to the test execution results, but we can also trace the test execution results back to test cases, test cases back to test conditions, and test conditions back to requirements.
+
+Forward traceability: Sources of the requirement -> Requirement -> Work products that implement the requirements.
+Backward traceability: (The reverse of the above).
+
+Good traceability also supports the following:
+
+Analyzing the impact of changes.
+
+Making testing auditable.
+
+Meeting IT governance criteria.
+
+Improving the coherence of test progress reports and test summary reports.
+
+Relating the technical aspects of testing to stakeholders in terms they can understand.
+
+Providing information to assess product quality, process capability and project progress against business goals.
+
+Software Development and Software Testing
+The life cycle model that is adopted for a project will have a big impact on the testing that is carried out. The way testing is organized must fit the development life cycle or it will fail to deliver its benefits.
+
+Sequential Development Model (e.g., Waterfall Model):
+Testing tends to happen at the end of the cycle, so defects are detected close to the live implementation date. With this model, it is difficult to get feedback passed backwards up the waterfall.
+
+The V-model:
+For every single phase in the development cycle, there is a directly associated testing phase. V-model provides guidance on how testing begins as early as possible in the life cycle and it also shows that testing is not only an execution-based activity.
+
+Iterative and Incremental Development Models:
+
+Examples: Scrum, Kanban, Spiral (or prototyping), Agile Development, Extreme Programming (XP).
+
+Testing is done throughout the process.
+
+Each iteration (sprint) culminates in a short period of testing, often with an independent tester as well as a business representative.
+
+Software Testing Methodologies:
+
+Functional: Unit, Integration, System, Acceptance.
+
+Non-Functional: Performance, Security, Usability, Compatibility.
+
+White Box, Black Box, and Gray Box Testing
+White-box testing (Structural/Glass-box/Clear-box):
+
+Testing based on an analysis of the internal structure of the component or system.
+
+Code is visible to testers.
+
+Techniques: Statement Coverage, Decision Coverage, Branch Coverage, Condition Coverage, Path Coverage.
+
+Black-box Testing (Behavioral Testing):
+
+Tested without having knowledge of internal code structure.
+
+Focuses on input and output based on software requirements and specifications.
+
+Types: Functional Testing, Non-Functional Testing, Regression Testing.
+
+Grey-box Testing:
+
+Testing with partial knowledge of the internal structure of the application.
+
+Non-functional testing
+Testing of the quality characteristics or non-functional attributes of the system (how well the system works). Includes:
+
+Performance testing: Speed, response time, stability, scalability.
+
+Load testing: Testing the system's loading capacity.
+
+Stress testing: Verifying stability and reliability under extremely heavy load conditions.
+
+Usability testing: Measuring how easy and user-friendly the application is.
+
+Security testing: Uncovering vulnerabilities, threats, and risks.
+
+Change-related testing
+Confirmation testing (re-testing): Dynamic test conducted after fixing defects to confirm that failures caused by those defects do not occur anymore.
+
+Regression testing: Done after code fixes or upgrades to check the new code has not affected the existing code.
